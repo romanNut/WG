@@ -535,10 +535,10 @@ max-width: 320px;
 /* Remove navigation button on smaller screens*/
 @media screen and (max-width: 800px) {
 .content {
-  margin: 0 10px;
+  margin: 0 0.2em;
 }
 .content2 {
-  margin: 0 10px;
+  margin: 0 0.2em;
 }
 /* .swiper-navBtn {
   display: none;
