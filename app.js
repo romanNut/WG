@@ -1,33 +1,71 @@
-var swiper = new Swiper(".content", {
-    slidesPerView: 3,
-    spaceBetween: 20,
-    grabCursor: "true",
-    navigation: {
-      nextEl: ".swiper-button-next",
-      prevEl: ".swiper-button-prev",
-    },
-    pagination: {
-      el: ".swiper-pagination",
-      clickable: true,
-    },
-    breakpoints: {
-      0: {
-        slidesPerView: 1,
-      },
-      520: {
-        slidesPerView: 3,
-      },
-      950: {
-        slidesPerView: 4,
-      },
-    },
-    autoplay: {
-      delay: 1213500,
-    },
-    // Infinite Loop Added
-    loop: true,
-  });
 
+var swiper = new Swiper(".content", {
+  slidesPerView: 3,
+  spaceBetween: 20,
+  grabCursor: "true",
+  navigation: {
+    nextEl: ".swiper-button-next",
+    prevEl: ".swiper-button-prev",
+  },
+  hashNavigation: {
+    replaceState: true,
+  },
+  pagination: {
+    el: ".swiper-pagination",
+    clickable: true,
+  },
+  breakpoints: {
+    0: {
+      slidesPerView: 1,
+    },
+    520: {
+      slidesPerView: 2,
+    },
+    950: {
+      slidesPerView: 3,
+    },
+  },
+  autoplay: {
+    delay: 4500
+  },
+  // Infinite Loop Added
+  loop: true,
+});
+
+
+
+var swiper2 = new Swiper(".content2", {
+  slidesPerView: 3,
+  spaceBetween: 20,
+  grabCursor: "true",
+  navigation: {
+    nextEl: ".swiper-button-next",
+    prevEl: ".swiper-button-prev",
+  },
+  hashNavigation: {
+    replaceState: true,
+  },
+  pagination: {
+    el: ".swiper-pagination2",
+    clickable: true,
+  },
+  breakpoints: {
+    0: {
+      slidesPerView: 1,
+    },
+    520: {
+      slidesPerView: 2,
+    },
+    950: {
+      slidesPerView: 3,
+    },
+  },
+  autoplay: {
+    delay: 4500
+  },
+  // Infinite Loop Added
+  loop: true,
+});
   let center = [44.04310676815635,43.02422500844308];
 
 function init() {
