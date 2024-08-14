@@ -184,9 +184,10 @@ font-size: 1.4em;
   display: flex;
   text-align: center;
   align-items: flex-end;
-  padding-bottom: 5%;
+  padding-bottom: 9%;
   justify-content: center;
   min-height: 100vh;
+  max-height: 100vh;
   max-width: 100%;
   background-image: url("фон-главная.jpg");
   background-size: cover;
@@ -213,13 +214,13 @@ font-size: 1.4em;
 @media(max-width: 1600px){
 
 .welcome {
-  padding-bottom: 6%;
+  padding-bottom: 9%;
 }
 }
 @media(max-width: 1368px){
 
 .welcome {
-  padding-bottom: 2.8em;
+  padding-bottom: 15%;
 }
 .logo{
   max-width: auto;
@@ -232,8 +233,7 @@ font-size: 1.4em;
   font-size: 0.7em;
  }
 }
-@media(max-width:1100px){
-}
+
 @media(max-width:972px){
 
 header{
@@ -243,7 +243,7 @@ header{
     gap: 0em; 
   }
   .welcome {
-    padding-bottom: 10em;
+    padding-bottom: 20%;
   }
   /* .welcome button{
   margin-bottom: 4em;
@@ -281,6 +281,9 @@ header{
   .welcome h6 {
       font-size: 0.8em;
   }
+  .welcome{
+    padding-bottom: 35%;
+  }
 }
 @media(max-width:616px){
 
@@ -288,7 +291,7 @@ header{
   background-color: transparent;
 }
   .welcome {
-    padding-bottom: 5em;
+    padding-bottom: 38%;
   }
   .welcome h1 {
       font-size: 4em;
@@ -329,7 +332,7 @@ header{
       margin-top: 2em;
   }
   .welcome {
-    padding-bottom: 50%;
+    padding-bottom: 54%;
   }
 
 }
@@ -839,7 +842,7 @@ list-style-image: url(Эллипс-1.png);
   }
   .list-equipment{
     margin: 0px 0% 0px 10%;
-    font-size: 0.8em;
+    font-size: 0.7em;
   }
   .list-equipment li{
     list-style-image: url(Эллипс-2.png);
@@ -1131,71 +1134,41 @@ background-size: cover;
 
 
 /* __________footer____________ */
-.footer{
-height: 25vh;
-max-width: 100%;
-margin-top: 2.6em;
-display: flex;
-flex: 1 1 auto;
-justify-content: space-between;
-align-items: start;
-padding-left: 5em;
-padding-right: 5em;
-}
-.footer-contacts{
-margin-left: 1em;
-}
-.logo-contact-footer{
-display: block;
-position: relative;
-justify-content: center;
-align-items: center;
-text-align: center;
-max-width: 150px;
-height: 125px;
-padding-top: 0.43em;
-padding-right: 0.5em;
 
-}
-.footer h4{
-opacity: 1;
-line-height: 1.2;
-padding-bottom: 0.5em;
-}
-.icons-footer{
-max-width: 40px;
-opacity: 0.9;
-}
-.footer-media{
-display: block;
-position: relative;
-justify-content: center;
-text-align: center;
-}
-pre{
-font-family: inherit;
+.footer{
+  display: flex;
+  height: fit-content;
+  padding-bottom: 5%;
+  padding-top: 1.5%;
+  justify-content: space-between;
 }
 .footer-link{
-display: block;
-position: relative;
-
+  max-width: fit-content;
 }
-.footer-h5{
-font-weight: 500;
-color: #FFF;
-margin-bottom: 1em;
-font-size: 1em;
+.footer h3{
+  font-weight: 500;
+  margin-bottom: 0.5em;
 }
-.footer h5{
-font-weight: 500;
-color: #ffffff;
-opacity: 1;
+.footer h4{
+  font-weight: 300;
+  margin-bottom: 0.5em;
 }
-.footer-graf{
-justify-content: center;
-text-align: center;
+.footer-graf {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+}
+.icons-footer{
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
+.icons-footer img{
+  max-height: 2em;
+  opacity: 0.75;
 }
 .copyright{
+
 display: flex;
 text-align: center;
 height: 60px;
@@ -1204,29 +1177,80 @@ align-items: center;
 justify-content: center;
 opacity: 0.8;
 }
-@media(max-width:680px){
-.footer{
-font-size: 0.8em;
-padding-left: 2em;
-padding-right: 2em;
+.copyright a{
+  font-family: "Oswald", sans-serif;
 }
 
-}
 @media(max-width:498px){
-.footer-graf{
-  font-size: 0.8em;
+  .footer{
+    font-size: 0.9em;
+  }
+  .footer-media h3{
+    text-align: center;
   }
   .copyright{
-    font-size: 0.8em;
+  font-size: 0.8em;
   }
-  .icons-footer{
-    max-width: 30px;
+  .title-equipment{
+    font-size: 2em;
   }
-  .footer h4{
-    font-size: 0.8em;
+  .icons-footer img{
+    max-height: 1.6em;
   }
-  .footer{
-    padding-left: 0.5em;
-    padding-right: 0.5em;
+}
+
+
+
+
+/* _______________OFERTA______________ */
+
+.ofertaBody{
+  background-color: #FFF;
+}
+.oferta{
+  color: #000;
+}
+.oferta h1{
+  display: flex;
+  justify-content: center;
+  font-size: 2.5em;
+  font-weight: 500;
+}
+.header-oferta .top-nav{
+  margin: 0;
+}
+.ofertaBody header{
+  position: relative;
+  background-color: #000;
+}
+.oferta h3{
+  display: flex;
+  justify-content: center;
+  font-size: 1.5em;
+  padding-top: 1em;
+  font-weight: 500;
+}
+.oferta h4{
+  display: flex;
+  justify-content: center;
+  font-size: 1em;
+  padding-top: 1em;
+  font-weight: 500;
+}
+.ofertaBody footer{
+  background-color: #000;
+  margin-top: 2em;
+  padding-top: 1em;
+}
+@media(max-width:498px){
+  .oferta h1{
+    font-size: 1.5em;
   }
+  .oferta h3{
+  font-size: 1.2em;
+}
+.oferta{
+  font-size: 0.7em;
+}
+
 }
