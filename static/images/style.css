@@ -1,0 +1,1251 @@
+
+body{
+  font-weight: 400;
+  font-size: 20px;
+  background-color: black;
+  font-family: "Oswald", sans-serif;
+  color: #fff;
+}
+.container{
+  max-width: 1140px;
+  padding: 0 15px;
+  margin: 0 auto;
+}
+.logo{
+  z-index: 100;
+  max-width: 90px;
+  max-height: auto;
+}
+.btn {
+  position: relative;
+  top: 3em;
+  height: auto;
+  padding: 0.4em;
+  border-radius: 0.5em;
+  background: #b00000;
+  color: white;
+}
+.btn-burger{
+  height: auto;
+  padding: 0.4em;
+  border-radius: 0.5em;
+  background: #b00000;
+  color: white;
+}
+span{
+cursor: pointer;
+}
+.top-nav {
+  max-height: 115px;
+  margin-top: 1em;
+  vertical-align: middle;
+}
+.menu>li {
+  display: flex;
+}
+header{
+position: fixed;
+width: 100%;
+margin: 0 auto;
+z-index: 100;
+background-color: rgba(0, 0, 0, 0.7);
+}
+/* __________________burger______________ */
+.top-nav {
+display: flex;
+flex-direction: row;
+align-items: center;
+justify-content: space-between;
+color: #FFF;
+max-height: 7%;
+padding: 0.2em;
+}
+
+.menu {
+display: flex;
+flex-direction: row;
+list-style-type: none;
+align-items: center;
+justify-content: center;
+margin: 0;
+padding: 0;
+gap: 1em;
+}
+.menu > li {
+margin: 0 1rem;
+overflow: hidden;
+
+}
+
+.menu-button-container {
+display: none;
+height: 100%;
+width: 35px;
+cursor: pointer;
+flex-direction: column;
+justify-content: center;
+align-items: center;
+}
+
+#menu-toggle {
+display: none;
+}
+
+.menu-button,
+.menu-button::before,
+.menu-button::after {
+display: block;
+background-color: #fff;
+position: absolute;
+height: 6px;
+width: 35px;
+transition: transform 400ms cubic-bezier(0.23, 1, 0.32, 1);
+border-radius: 2px;
+z-index: 100;
+}
+
+.menu-button::before {
+content: '';
+margin-top: -8px;
+}
+
+.menu-button::after {
+content: '';
+margin-top: 8px;
+}
+
+#menu-toggle:checked + .menu-button-container .menu-button::before {
+margin-top: 0px;
+transform: rotate(405deg);
+}
+
+#menu-toggle:checked + .menu-button-container .menu-button {
+background: rgba(255, 255, 255, 0);
+}
+
+#menu-toggle:checked + .menu-button-container .menu-button::after {
+margin-top: 0px;
+transform: rotate(-405deg);
+}
+
+@media (max-width: 972px) {
+
+.menu > li {
+font-size: 1.4em;
+}
+.menu-button-container {
+  display: flex;
+}
+.menu {
+  gap: 0;
+  position: absolute;
+  top: 0;
+  margin-top: 0px;
+  left: 0;
+  flex-direction: column;
+  width: 100%;
+  justify-content: center;
+  align-items: center;
+}
+#menu-toggle ~ .menu li {
+  height: 0;
+  margin: 0;
+  padding: 0;
+  border: 0;
+  transition: height 400ms cubic-bezier(0.23, 1, 0.32, 1);
+}
+.menu li:last-child{
+  background-color: #b00000;
+}
+#menu-toggle:checked ~ .menu li {
+  height: 2.5em;
+  padding: 0.5em;
+  transition: height 400ms cubic-bezier(0.23, 1, 0.32, 1);
+}
+.menu > li {
+  display: flex;
+  justify-content: center;
+  margin: 0;
+  padding: 0.5em 0;
+  width: 100%;
+  color: white;
+  background-color: #000000;
+  border-radius: 0px;
+}
+.menu > li:not(:last-child) {
+  border-bottom: 1px solid #444;
+}
+.menu > li:last-child{
+  border-radius: 0px 0px 10px 10px;
+}
+}
+/* _______________main_______________ */
+.welcome {
+  display: flex;
+  text-align: center;
+  align-items: flex-end;
+  padding-bottom: 9%;
+  justify-content: center;
+  min-height: 100vh;
+  max-height: 100vh;
+  max-width: 100%;
+  background-image: url("фон-главная.jpg");
+  background-size: cover;
+  background-position: center;  
+}
+.welcome h1 {
+  font-size: 8em;
+  font-weight: 500;
+  line-height: 1;
+}
+.welcome h2 {
+  font-size: 3.2em;
+  color: #BEBEBE;
+  line-height: 1;
+}
+.welcome h6 {
+  font-size: 1em;
+  color: #BEBEBE;
+  line-height: 1.5;
+}
+.welcome button{
+  margin-top: 5%;
+}
+@media(max-width: 1600px){
+
+.welcome {
+  padding-bottom: 9%;
+}
+}
+@media(max-width: 1368px){
+
+.welcome {
+  padding-bottom: 15%;
+}
+.logo{
+  max-width: auto;
+  max-height: 50px;
+}
+.menu{
+  gap: 2.5em; 
+}
+ .menu:last-child{
+  font-size: 0.7em;
+ }
+}
+
+@media(max-width:972px){
+
+header{
+  background-color: transparent;
+}
+  .menu{
+    gap: 0em; 
+  }
+  .welcome {
+    padding-bottom: 20%;
+  }
+  /* .welcome button{
+  margin-bottom: 4em;
+  margin-top: 7.3em;
+  } */
+  .logo{
+    max-width: auto;
+    max-height: 50px;
+  }
+  .welcome h1 {
+      font-size: 6em;
+  }
+  .welcome h2 {
+      font-size: 2.7em;
+  }
+  .welcome h6 {
+      font-size: 0.8em;
+  }
+  .container-coaches {
+    display: flex;
+    flex-direction: column;
+  }
+}
+@media(max-width:767px){
+
+header{
+  background-color: transparent;
+}
+  .welcome h1 {
+      font-size: 5em;
+  }
+  .welcome h2 {
+      font-size: 2.7em;
+  }
+  .welcome h6 {
+      font-size: 0.8em;
+  }
+  .welcome{
+    padding-bottom: 35%;
+  }
+}
+@media(max-width:616px){
+
+header{
+  background-color: transparent;
+}
+  .welcome {
+    padding-bottom: 38%;
+  }
+  .welcome h1 {
+      font-size: 4em;
+      line-height: 1.2;
+  }
+  .welcome h2 {
+      font-size: 2em;
+      line-height: 1.2;
+  }
+  .welcome h6 {
+      font-size: 0.8em;
+  }
+}
+@media(max-width:498px){
+
+header{
+  background-color: transparent;
+}
+  .logo{
+      max-width: 50px;
+      max-height: auto;
+  }
+  .welcome h1 {
+      font-size: 3em;
+  }
+  .welcome h2 {
+      font-size: 2em;
+  }
+  .welcome h6 {
+      font-size: 0.65em;
+  }
+  .welcome button{
+      margin-top: 2em;
+  }
+  .welcome {
+    padding-bottom: 67%;
+  }
+
+}
+@media(max-width:380px){
+
+header{
+  background-color: transparent;
+}
+.logo{
+    max-width: 40px;
+    max-height: auto;
+}
+.welcome h1 {
+    font-size: 2.6em;
+}
+.welcome h2 {
+    font-size: 1.9em;
+}
+.welcome h6 {
+    font-size: 0.5em;
+}
+}
+
+
+
+
+/* ____________________direction________________ */
+.direction{
+background-image: url("фото-направления/фон-направления.jpg");
+background-repeat: no-repeat;
+background-size: cover;
+background-position: center;
+height: fit-content;
+padding-bottom: 5em;
+}
+
+.title-direction,
+.title-coaches,
+.title-equipment,
+.title-abonement,
+.title-contacts  {
+padding-top: 1.5em;
+text-align: center;
+margin-bottom: 1em;
+font-size: 2.4em;
+font-weight: 400;
+text-decoration: underline red;
+-webkit-text-decoration: underline red;
+text-underline-offset: 7px;
+
+}
+.title-direction{
+padding-top: 2em;
+margin-bottom: 1em;
+text-decoration: underline red;
+-webkit-text-decoration: underline red
+}
+.title-equipment{
+margin: 0px 44% 0px 57%;
+-webkit-text-decoration: underline red
+}
+
+.list-direction{
+width: 1140px;
+margin: 0 auto;
+top: 2.5em;
+display: grid;
+justify-content: center;
+align-items: center;
+text-align: center;
+grid-template-columns: 33.333% 33.333% 33.333%;
+grid-template-rows: 50% 50%;
+gap: 22px;
+}
+.direction-1{
+display: none;
+}
+.direction1,
+.direction2,
+.direction3,
+.direction4,
+.direction5,
+.direction6 {
+
+background-repeat: no-repeat;
+background-size: cover;
+background-position: center;
+align-items: center;
+justify-content: center;
+height: 15em;
+width: 100%;
+display: flex;
+align-items: flex-end;
+border-radius: 0.5rem;
+
+}
+
+.text-direction1,
+.text-direction2,
+.text-direction3,
+.text-direction4,
+.text-direction5,
+.text-direction6 {
+display: flex;
+justify-content: center;
+align-items: center;
+min-width: 100%;
+min-height: 2.5em;
+border-radius: 0px 0px 0.45rem 0.45rem;
+background-color: rgba(0, 0, 0, 0.6);
+color:  rgb(255, 255, 255);
+font-size: 2rem;
+font-weight: 400;
+background-size: cover;
+}
+.direction1{
+background-image: url("фото-направления/фото-воркаут.jpg");
+}
+.direction2 {
+background-image: url("фото-направления/фото-флай.jpg");
+}
+
+
+.direction3 {
+background-image: url("фото-направления/фото-айенгара.jpg");
+}
+
+.direction4 {
+background-image: url("фото-направления/фото-арм.jpg");
+}
+
+
+.direction5 {
+background-image: url("фото-направления/фото-персон.jpg");
+
+}
+
+.direction6 {
+background-image: url("фото-направления/фото-петли.jpg");
+
+}
+.swiper{
+display: none;
+}
+.content,
+.content2 {
+margin: 0 0.2em;
+overflow: hidden;
+border-left: 5px solid #616161;
+border-right: 5px solid #616161;
+padding-inline: 5px;
+}
+
+.swiper-pagination2{
+  display: flex;
+  margin: 0 auto;
+  justify-content: center;
+}
+
+/* Card Styling */
+.card {
+display: flex;
+justify-content: center;
+align-items: center;
+flex-direction: column;
+text-align: center;
+padding-inline: 5px;
+padding-block: 50px;
+/* max-width: 320px; */
+}
+@media(max-width: 1368px){
+.list{
+  display: none;
+}
+.list-direction{
+  display: none;
+}
+.swiper{
+  display: inherit;
+}
+
+}
+/* Swiper Navigation Styles */
+.swiper-navBtn::before,
+.swiper-navBtn::after {
+  font-size: 55px;
+}
+.swiper-button-prev {
+  color: #f87171;
+}
+
+.swiper-button-prev:hover {
+  color: #dc2626;
+}
+.swiper-button-next {
+  color: #4ade80;
+}
+.swiper-button-next:hover {
+  color: #16a34a;
+}
+
+/* Remove navigation button on smaller screens*/
+@media screen and (max-width: 800px) {
+.content {
+  margin: 0 0.2em;
+}
+.content2 {
+  margin: 0 0.2em;
+}
+/* .swiper-navBtn {
+  display: none;
+} */
+
+}
+
+.swiper-pagination-bullet {
+  background-color: #643131;
+  opacity: 1;
+}
+.swiper-pagination-bullet-active {
+  background-color: #ff0000;
+}
+
+
+
+
+
+
+/* _________________ТРЕНЕРЫ___________ */
+.coaches {
+/* background-image: url("тренеры/фон.png"); */
+background-color: #000;
+background-repeat: no-repeat;
+background-size: cover;
+background-position: center;
+height: fit-content;
+padding-bottom: 2em;
+}
+
+.container-coaches {
+
+display: flex;
+flex-direction: row;
+justify-content: space-between;
+margin: 0 auto;
+flex-wrap: wrap; 
+row-gap: 4px;
+}
+
+.coach1-photo {
+display: flex;
+max-height: 50%;
+width: 49.8%;
+
+}
+
+.coach1-text{
+width: 49.8%;
+background-image: url("тренеры/косые1.png");
+background-color: black;
+background-repeat: no-repeat;
+background-position: right;
+padding-left: 0.7em;
+padding-top: 1.6em;
+text-align: left;
+}
+
+.h4-coach1,
+.h4-coach2 {
+font-size: 1.8em;
+font-weight: 500;
+color: red;
+text-decoration: underline white;  
+-webkit-text-decoration: underline rgb(255, 255, 255);
+text-underline-offset: 0.35rem;
+}
+
+.h5-coach1,
+.h5-coach2 {
+font-size: 1.2em;
+line-height: 1.2; 
+color: #C4C4C4;
+}
+
+.h6-coach1,
+.h6-coach2 {
+font-size: 1em;
+padding-top: 1.5em;
+line-height: 1.2; 
+color: #A6A6A6;
+margin-bottom: 2.5em;
+}
+
+.coach2-photo {
+display: flex;
+width: 49.8%;
+max-height: 50%;
+
+}
+
+.coach2-text {
+width: 49.8%;
+padding-right: 0.7em;
+padding-top: 1.6em;
+background-image: url("тренеры/косые2.png");
+background-color: black;
+background-repeat: no-repeat;
+background-position: left;
+text-align: right;
+}
+.container1-icons-coaches{
+display: flex;
+width: 100%;
+justify-content: left;
+gap: 2em;
+padding-left: 1em;
+padding-right: 1em;
+padding-bottom: 1em;
+}
+.container2-icons-coaches{
+display: flex;
+width: 100%;
+justify-content: right;
+gap: 2em;
+padding-left: 1em;
+padding-right: 1em;
+padding-bottom: 1em;
+}
+.icons-coach1{
+max-width: 2em;
+}
+.icons-coach2{
+max-width: 2em;
+}
+.title-coaches{
+    padding-top: 2em;
+  margin-bottom: 1em;
+}
+@media(max-width: 1600px){
+
+.coach1-photo {
+  justify-content: center;
+}
+.coach2-photo {
+  justify-content: center;
+}
+}
+@media(max-width: 1368px){
+
+  .title-coaches{
+  padding-top: 1em;
+  margin-bottom: 1em;
+}
+}
+@media(max-width: 1024px){
+
+}
+
+@media(max-width:972px){
+
+.coach1-text {
+  width: 100%;
+}
+.coach2-text {
+  width: 100%;
+}
+.coaches>img{
+  max-width: 100%;
+  margin: 0 auto;
+}
+.container-coaches {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.container1-icons-coaches{
+  justify-content: center;
+}
+.container2-icons-coaches{
+  justify-content: center;
+}
+.coach1-photo {
+  max-height: 100%;
+  width: 100%;
+}
+.coach2-text {
+  padding-top: 1em;
+  padding: 0;
+  text-align: center;
+  background-image:none;
+}
+.coach1-text {
+  padding-top: 1em;
+  padding: 0;
+  text-align: center;
+  background-image:none;
+}
+#a { order: 2; }
+#b { order: 1; }
+.container1-icons-coaches{
+margin-bottom: 1em;
+}
+.container2-icons-coaches{
+margin-bottom: 1em;
+}
+.h4-coach1,
+.h4-coach2 {
+text-underline-offset: 0.5rem;
+}
+.title-coaches{
+  padding-top: 2em;
+  margin-bottom: 1em;
+}
+.container-coaches{
+  padding-top: 0.7em;
+  border: 3px solid rgba(255, 0, 0, 0.2);
+  border-radius: 0.5em;
+}
+.coach1-text{
+  border-bottom: 3px solid #b00000;
+}
+}
+@media(max-width:768px){
+  .h5-coach1,
+  .h5-coach2{
+    font-size: 1em;
+  }
+
+}
+@media(max-width:498px){
+.container-coaches{
+  padding-top: 0.7em;
+  border: 3px solid rgba(255, 0, 0, 0.2);
+  border-radius: 0.5em;
+}
+.title-coaches{
+  padding-top: 1em;
+  margin-bottom: 1em;
+}
+
+}
+
+
+
+
+
+/* ОБОРУДОВАНИЕ */
+
+
+
+.equipment {
+background-image: url("фон-оборудования.jpg");
+background-position: center;
+background-repeat: no-repeat;
+background-size: cover;
+height: fit-content;
+padding-bottom: 5em;
+
+}
+.title-equipment{
+margin-bottom: 0.7em;
+}
+
+.list-equipment {
+display: flex;
+flex-direction: column;
+font-size: 1.3em;
+color: #D8D8D8;
+margin: 0px 0% 0px 50%;
+top: 3em;
+list-style-image: url(Эллипс-1.png);
+}
+
+@media(max-width: 1600px){
+
+}
+@media(max-width: 1368px){
+
+
+}
+@media(max-width: 1055px){
+.list-equipment{
+  font-size: 1.15em;
+}
+}
+@media(max-width: 1024px){
+
+}
+@media(max-width:972px){
+.title-equipment{
+  margin: 0;
+  margin-bottom: 1em;
+  padding-top: 1em;
+  justify-content: center;
+}
+.list-equipment{
+  margin: 0px 0% 0px 20%;
+}
+}
+@media(max-width:768px){
+
+}
+@media(max-width:498px){
+  .title-equipment{
+    text-underline-offset: 0.2em;
+  }
+  .list-equipment{
+    margin: 0px 0% 0px 10%;
+    font-size: 0.7em;
+  }
+  .list-equipment li{
+    list-style-image: url(Эллипс-2.png);
+  }
+}
+@media(max-width:380px){
+
+}
+
+
+
+
+/* АБОНЕМЕНТЫ */
+
+.abonement p{
+margin: 0;
+}
+.abonements{
+background-image: url(фон-абонементы.jpg);
+background-position: center;
+background-size: cover;
+background-repeat: no-repeat;
+height: fit-content;
+padding-bottom: 5em;
+
+}
+
+/* .abonement{
+display: grid;
+margin: 8vh auto;
+max-width: 1400px;
+grid-template-columns: 16.666% 16.666% 16.666% 16.666% 16.666% 16.666%;
+gap: 3px;
+} */
+.abonement{
+display: flex;
+justify-content: space-evenly;
+width: 80%;
+flex-wrap: wrap;
+margin: 0 auto;
+padding-top: 1.5em;
+}
+.abonement1,
+.abonement2,
+.abonement3,
+.abonement4,
+.abonement5,
+.abonement6 {
+position: relative;
+min-width: 10.5em;
+max-width: 23vh;
+height: 380px;
+background-color: black;
+border-radius: 19px;
+text-align: center;
+box-shadow: 0px 0px 2.75em 0.5em rgba(255, 0, 0, 0.4);
+}
+.abonement2,
+.abonement5 {
+max-width: 21.5vh;
+}
+.logo-abonement {
+max-width: 95px;
+height: auto;
+margin-top: 0.75em;
+}
+
+.name-abonement {
+font-size: 1.2em;
+color: #FF0000;
+}
+
+.price-abonement1,
+.price-abonement3,
+.price-abonement4,
+.price-abonement6 {
+display: grid;
+justify-content: center;
+grid-template-columns: 80px 70px;
+column-gap: 25px;
+}
+.price-abonement2,
+.price-abonement5{
+font-size: 0.8em;
+top: 40px;
+align-items: center;
+padding-top: 2em;
+/* margin-bottom: 7.2em; */
+}
+.term-abonement1,
+.term-abonement3,
+.term-abonement4,
+.term-abonement6 {
+text-align: right;
+font-size: 0.9em;
+}
+
+.money-abonement1,
+.money-abonement3,
+.money-abonement4,
+.money-abonement6 {
+text-align: left;
+font-size: 0.9em;
+padding-left: 0.75em
+}
+
+.graph-abonement1,
+.graph-abonement2,
+.graph-abonement3,
+.graph-abonement4,
+.graph-abonement6 {
+display: grid;
+justify-content: center;
+}
+.day-abonement1,
+.day-abonement3,
+.day-abonement4,
+.day-abonement6  {
+padding-left: 0.15em;
+padding-right: 0.15em;
+margin-top: 0.15em;
+color: #FF0000;
+display: flex;
+justify-content: space-between;
+gap: 16px;
+font-size: 1em;
+}
+.day-abonement3 {
+margin-top: 0px;
+font-size: 0.9em;
+}
+.time-abonement1,
+.time-abonement3,
+.time-abonement4,
+.time-abonement6 {
+display: flex;
+/* margin-bottom: 2em; */
+justify-content: space-between;
+font-size: 0.7em;
+}
+.time-abonement3{
+margin: 0px;
+font-size: 0.6em;
+margin-top: -3px;
+line-height: 1.3em;
+/* margin-bottom: 0.6em; */
+}
+.time-abonement6,
+.time-abonement4{
+margin: 0px;
+font-size: 0.7em;
+/* margin-bottom: 2em; */
+}
+
+.btn-abonement {
+position: absolute;
+display: flex;
+left: 10px;
+bottom: 10px;
+background-color: #b00000;
+justify-content: center;
+align-items: center;
+text-align: center;
+color: #FFF;
+min-width: 9.5em;
+height: 2em;
+border-radius: 0.5em;
+}
+/* ______swiper______ */
+@media(max-width: 1368px){
+.list{
+  display: none;
+}
+.swiper{
+  display: inherit;
+}
+}
+/* Remove navigation button on smaller screens*/
+@media screen and (max-width: 800px) {
+.content {
+  margin: 0 10px;
+}
+.swiper-navBtn {
+  display: none;
+}
+}
+/* ________________KAPTA_____________ */
+
+.map1 {
+position: relative;
+min-width: 100%;
+height: 500px;
+}
+
+[class*="copyrights-pane"] {
+display: none !important;
+}
+
+[class*="ground-pane"] {
+filter: grayscale(0.7);
+}
+
+.contacts {
+  position: absolute;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  max-width: 460px;
+  height: 350px;
+  background-color: black;
+  border-radius: 1em;
+  z-index: 2;
+  margin-top: 4em;
+  padding: 0.5em;
+  
+  left: 12%;
+  box-shadow: 0px 0px 3em 1.5em rgba(0, 0, 0, 0.25);
+  background: rgb(0, 0, 0);
+}
+.title-contacts{
+padding: 0;
+margin-bottom: 0.4em;
+}
+.phone-contacts {
+  display: flex;
+  flex-direction: column;
+  margin-top: 0.4em;
+  font-size: 1.1em;
+  opacity: 0.9;
+  color: #D8D8D8;
+}
+.adres-contacts {
+  font-size: 1.2em;
+}
+.contacts>h5{
+color: #ffffff;
+}
+.way-contacts {
+  justify-content: center;
+  display: flex;
+  font-size: 1.2em;
+  margin-top: 0.5em;
+  text-decoration: underline rgb(255, 255, 255);
+-webkit-text-decoration: underline rgb(255, 255, 255);
+text-underline-offset: 0.3rem;
+-webkit-text-underline-offset: 0.3em;
+}
+
+.btn-map-lock{
+  cursor: pointer;
+  position: absolute;
+  right: 12%;
+  margin-top: 4.2em;
+  z-index: 2;
+  background-image: url("icons/замок-закрыт-2.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  min-width: 60px;
+  min-height: 65px;
+}
+.btn-map-unlock {
+  justify-content: center;
+  background-image: url("icons/замок-открыт-2.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+@media(max-width:972px){
+.contacts{
+position: relative;
+left: 0;
+margin: 0 auto;
+border: 5px solid rgba(255, 0, 0, 0.2);
+border-radius: 0;
+}
+}
+@media(max-width:498px){
+.btn-map-lock{
+  right: 8%;
+  margin-top: 2em;
+}
+.btn-map-unlock {
+justify-content: center;
+background-image: url("icons/замок-открыт-2.png");
+background-repeat: no-repeat;
+background-size: cover;
+}
+}
+
+
+
+/* __________footer____________ */
+
+.footer{
+  display: flex;
+  height: fit-content;
+  padding-bottom: 5%;
+  padding-top: 1.5%;
+  justify-content: space-between;
+}
+.footer-link{
+  max-width: fit-content;
+}
+.footer h3{
+  font-weight: 500;
+  margin-bottom: 0.5em;
+}
+.footer h4{
+  font-weight: 300;
+  margin-bottom: 0.5em;
+}
+.footer-graf {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+}
+.icons-footer{
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
+.icons-footer img{
+  max-height: 2em;
+  opacity: 0.75;
+}
+.copyright{
+
+display: flex;
+text-align: center;
+height: 60px;
+background-color: #333;
+align-items: center;
+justify-content: center;
+opacity: 0.8;
+}
+.copyright a{
+  font-family: "Oswald", sans-serif;
+}
+
+@media(max-width:498px){
+  .footer{
+    font-size: 0.9em;
+  }
+  .footer-media h3{
+    text-align: center;
+  }
+  .copyright{
+  font-size: 0.8em;
+  }
+  .title-equipment{
+    font-size: 2em;
+  }
+  .icons-footer img{
+    max-height: 1.6em;
+  }
+}
+
+
+
+
+/* _______________OFERTA______________ */
+
+.ofertaBody{
+  background-color: #FFF;
+}
+.oferta{
+  color: #000;
+}
+.oferta h1{
+  display: flex;
+  justify-content: center;
+  font-size: 2.5em;
+  font-weight: 500;
+}
+.header-oferta .top-nav{
+  margin: 0;
+}
+.ofertaBody header{
+  position: relative;
+  background-color: #000;
+}
+.oferta h3{
+  display: flex;
+  justify-content: center;
+  font-size: 1.5em;
+  padding-top: 1em;
+  font-weight: 500;
+}
+.oferta h4{
+  display: flex;
+  justify-content: center;
+  font-size: 1em;
+  padding-top: 1em;
+  font-weight: 500;
+}
+.ofertaBody footer{
+  background-color: #000;
+  margin-top: 2em;
+  padding-top: 1em;
+}
+@media(max-width:498px){
+  .oferta h1{
+    font-size: 1.5em;
+  }
+  .oferta h3{
+  font-size: 1.2em;
+}
+.oferta{
+  font-size: 0.7em;
+}
+
+}
