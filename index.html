@@ -1,585 +1,177 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ru">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Workout GYM - cпортивный клуб в Пятигорске, зал силовых, аэробных и функциональных тренировок для детей и взрослых.</title>
-    <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"/>
-    <link rel="stylesheet" href="./static/styles/reset.css">
-    <link rel="stylesheet" href="./static/images/style.css">
-    <link rel="icon" type="image/x-icon" href="./static/images/icons/logoTitle.jpg"></link>
+    <title>Чичероне - QR-гид по Кавказу</title>
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <main class="main">
-        <header>
-            <div class="container">
-                <div class="header">
-                    <section class="top-nav">
-                        <span href="#" id="scrollButton0"><img src="./static/images/icons/лого.png" alt="" class="logo"></span>
-                        <input id="menu-toggle" type="checkbox" />
-                        <label class='menu-button-container' for="menu-toggle">
-                            <div class='menu-button'></div>
-                        </label>
-                        <ul class="menu">
-                          <li><span href="#" id="scrollButton1">Направления</span></li>
-                          <li><span href="#" id="scrollButton2">Тренеры</span></li>
-                          <li><span href="#" id="scrollButton3">Оборудование</span></li>
-                          <li><span href="#" id="scrollButton4">Абонементы</span></li>
-                          <li><span href="#" id="scrollButton5">Контакты</span></li>
-                          <li class="btn-burger"><a href="tel:+79097588738">+7 (909) 758-87-38</a></li>
-                        </ul>
-                    </section>
-                </div>
-            </div>
-        </header>
-        <section class="welcome">
-            <div class="container">
-                <h2>Добро пожаловать в</h2>
-                <h1>WORKOUT GYM</h1>
-                <h6>Спортивный клуб, зал силовых, аэробных и функциональных тренировок
-                    <br>Групповые и индивидуальные программы для детей и взрослых</h6>
-                    <a class="btn" href="https://wa.me/79097588738?text=Здравствуйте%2C+я+хочу+узнать+подробнее+о+спортивном+зале">Узнать подробнее</a>
-            </div>
-        </section>
-        <section class="direction">
-            <div class="container">
-                <h3 class="title-direction">НАПРАВЛЕНИЯ</h3>
-                <div class="container list-direction">
-                    <div class="direction1">
-                        <h4 class="text-direction1">WORKOUT</h4>
+    <!-- Шапка сайта -->
+    <header class="header">
+        <div class="container">
+            <div class="header-content">
+                <div class="header-logo">
+                    <div class="eagle">🦅</div>
+                    <div class="header-text">
+                        <h1>ЧИЧЕРОНЕ</h1>
+                        <p>Цифровой гид по сокровищам Кавказа</p>
                     </div>
-                    <div class="direction2">
-                        <h4 class="text-direction2">FLY YOGA</h4>
-                    </div>
-                    <div class="direction3">
-                        <h4 class="text-direction3">YOGA IYENGAR</h4>
-                    </div>
-                    <div class="direction4">
-                        <h4 class="text-direction4">ARM WRESTLING</h4>
-                    </div>
-                    <div class="direction5">
-                        <h4 class="text-direction5">PERSONAL TRAINING</h4>
-                    </div>
-                    <div class="direction6">
-                        <h4 class="text-direction6">TRX FISIO</h4>
-                    </div>
-                </div>
-
-                <div class=" container-direction-1">
-                    <div class="swiper">
-                      <div class="content">
-                        <div class="cards-wrapper swiper-wrapper">
-                          <div class="card one swiper-slide">
-                            <div class="direction1">
-                                <h4 class="text-direction1">WORKOUT</h4>
-                            </div>
-                          </div>
-                          <div class="card two swiper-slide">
-                            <div class="direction2">
-                                <h4 class="text-direction2">FLY YOGA</h4>
-                            </div>
-                          </div>
-                          <div class="card three swiper-slide">
-                            <div class="direction3">
-                                <h4 class="text-direction3">YOGA IYENGAR</h4>
-                            </div>
-                          </div>
-                          <div class="card four swiper-slide">
-                            <div class="direction4">
-                                <h4 class="text-direction4">ARM WRESTLING</h4>
-                            </div>
-                          </div>
-                          <div class="card five swiper-slide">
-                            <div class="direction5">
-                                <h4 class="text-direction5">PERSONAL TRAINING</h4>
-                            </div>
-                          </div>
-                          <div class="card five swiper-slide">
-                            <div class="direction6">
-                                <h4 class="text-direction6">TRX FISIO</h4>
-                            </div>
-                          </div>
-                        </div>
-                        <div class="swiper-pagination"></div>
-                    </div>
-                </div>
-            </div>
-        </section>
-        <section class="coaches">
-            <h3 class="title-coaches">ТРЕНЕРЫ</h3>
-            <div class="container container-coaches">
-                <div class="coach1-photo" ><img src="./static/images/тренеры/фото-Лёша4.jpg" alt=""></div>
-                <div class="coach1-text">
-                    <h4 class="h4-coach1">АСТАШКИН АЛЕКСЕЙ</h4>
-                    <h5 class="h5-coach1">ТРЕНЕР ПО СИЛОВОМУ ВОРКАУТУ
-                        <br>ПЕРСОНАЛЬНЫЙ ТРЕНЕР</h5>
-                    <h6 class="h6-coach1">Тренерский стаж:   5 лет
-                        <br>Спортивный опыт: 17 лет</h6>
-                    <div class="container1-icons-coaches">
-                        <div class="icons-coach1"><a href="https://vk.com/id182101478?from=search"><img src="static/images/icons/vk.png" alt=""></a></div>
-                        <div class="icons-coach1"><a href="https://t.me/workout_ptg?from=search"><img src="static/images/icons/telegram.png" alt=""></a></div>
-                    </div>
-                </div>
-               
-                <div class="coach2-text" id="a">
-                    <h4 class="h4-coach2">ЗУБРИЙ АЛЛА</h4>
-                    <h5 class="h5-coach2">ТРЕНЕР ПО FLY-ЙОГЕ И 
-                        <br>ЙОГЕ АЙЕНГАРА</h5>
-                    <h6 class="h6-coach2">Тренерский стаж:  6 лет
-                        <br>Спортивный опыт: 10 лет</h6>
-                        <div class="container2-icons-coaches">
-                            <div class="icons-coach2" id="c"><a href="https://t.me/+-Ugn__6hak9hYWMy"><img class="icons-coach2" src="static/images/icons/telegram.png" alt=""></a></div>
-                            <div class="icons-coach2" id="d"><a href="https://vk.com/allazubry"><img class="icons-coach2" src="static/images/icons/vk.png" alt=""></a></div>
-                        </div>
-                </div>
-                <div class="coach1-photo" id="b"><img src="./static/images/тренеры/фото-Алла.jpg" alt=""></div>
-
-                <div class="coach1-photo"><img src="./static/images/тренеры/фото-Рустам.jpg" alt=""></div>
-                <div class="coach1-text">
-                    <h4 class="h4-coach1">МАТЛУБИ РУСТАМ</h4>
-                    <h5 class="h5-coach1">ТРЕНЕР ПО СИЛОВОМУ ВОРКАУТУ
-                        <br>ПЕРСОНАЛЬНЫЙ ТРЕНЕР</h5>
-                    <h6 class="h6-coach1">Тренерский стаж:   3 лет
-                        <br>Спортивный опыт: 18 лет</h6>
-                    <div class="container1-icons-coaches">
-                        <div class="icons-coach1"><a href="https://vk.com/rustam_wg?from=search"><img src="static/images/icons/vk.png" alt=""></a></div>
-                        <div class="icons-coach1"><a href="https://t.me/workout_ptg?from=search"><img src="static/images/icons/telegram.png" alt=""></a></div>
-                    </div>
-                </div>
-            </div>
-        </section>
-        <section class="equipment">
-            <div class="container equipment-container">
-                <h3 class="title-equipment">ОБОРУДОВАНИЕ</h3>
-                <ul class="list-equipment">
-                    <li>СИЛОВАЯ РАМА</li>
-                    <li>ТУРНИКИ, БРУСЬЯ И СВОБОДНЫЕ ВЕСА</li>
-                    <li>ГИМНАСТИЧЕСКИЕ КОЛЬЦА, КАНАТЫ И ПАРАЛЕТСЫ</li>
-                    <li>ДЛЯ ФУНКЦИОНАЛЬНОГО ТРЕНИНГА</li>
-                    <li>СТРЕТЧИНГ ЗОНА И ГАМАКИ</li>
-                    <li>ДЛЯ СТРИТЛИФТИНГА</li>
-                    <li>ДЛЯ АРМРЕСТЛИНГА</li>
-                    <li>ДЛЯ ЙОГИ</li>
-                </ul>
-            </div>
-        </section>
-        <section class="abonements">
-            <h3 class="title-abonement">АБОНЕМЕНТЫ</h3>
-            <div class="abonement list">
-                    <div class="abonement1">
-                        <img src="./static/images/icons/лого.png" alt="" class="logo-abonement">
-                        <h5 class="name-abonement">TRX FISIO</h5>
-                        <div class="price-abonement1">
-                            <div class="term-abonement1">
-                                <p>12/МЕСЯЦ</p>
-                                <p>8/МЕСЯЦ</p>
-                                <p>4/МЕСЯЦ</p>
-                                <p>РАЗОВОЕ</p>
-                                <p>ПРОБНОЕ</p>
-                            </div>
-                            <div class="money-abonement1">
-                                <p>4000₽</p>
-                                <p>3200₽</p>
-                                <p>1800₽</p>
-                                <p>500₽</p>
-                                <p>250₽</p>
-                            </div>
-                        </div>
-                        <div class="graph-abonement1">
-                            <div class="day-abonement1">
-                                <p>Пн</p>
-                                <p>Вт</p>
-                                <p>Ср</p>
-                                <p>Чт</p>
-                                <p>Пт</p>
-                                <p>Сб</p>
-                            </div>
-                            <div class="time-abonement1">
-                                <p>7:00</p>
-                                <p>7:00</p>
-                                <p>7:00</p>
-                                <p>7:00</p>
-                                <p>7:00</p>
-                                <p>7:00</p>
-                            </div>
-                        </div>
-                       <a class="btn-abonement" href="https://wa.me/79097588738?text=Здравствуйте%2C+я+хочу+приобрести+абонемент+TRX+FISIO">Купить карту</a>
-                    </div>
-                    <div class="abonement2">
-                        <img src="./static/images/icons/лого.png" alt="" class="logo-abonement">
-                        <h5 class="name-abonement">PERSONAL TRAINING</h5>
-                        <div class="price-abonement2">
-                           <p>Персональные тренировки проводятся по предварительной записи и обсуждаются индивидуально с тренером</p>
-                        </div>
-                        
-                        <a class="btn-abonement" href="https://wa.me/79097588738?text=Здравствуйте%2C+у+меня+есть+вопрос+по+персональным+тренировкам">Узнать подробнее</a>
-                    </div>
-                    <div class="abonement3">
-                        <img src="./static/images/icons/лого.png" alt="" class="logo-abonement">
-                        <h5 class="name-abonement">WORKOUT</h5>
-                        <div class="price-abonement3">
-                            <div class="term-abonement3">
-                                <p>12/МЕСЯЦ</p>
-                                <p>8/МЕСЯЦ</p>
-                                <p>4/МЕСЯЦ</p>
-                                <p>РАЗОВОЕ</p>
-                                <p>ПРОБНОЕ</p>
-                            </div>
-                            <div class="money-abonement3">
-                                <p>4000₽</p>
-                                <p>3200₽</p>
-                                <p>1800₽</p>
-                                <p>500₽</p>
-                                <p>250₽</p>
-                            </div>
-                        </div>
-                        <div class="graph-abonement3">
-                            <div class="day-abonement3">
-                                <p>Пн</p>
-                                <p>Вт</p>
-                                <p>Ср</p>
-                                <p>Чт</p>
-                                <p>Пт</p>
-                                <p>Сб</p>
-                            </div>
-                            <div class="time-abonement3">
-                                <p>16:00 <br> 17:30</p>
-                                <p>17:00 <br> 18:30 <br> 20:00</p>
-                                <p>16:00 <br> 17:30</p>
-                                <p>17:00 <br> 18:30 <br> 20:00</p>
-                                <p>16:00 <br> 17:30</p>
-                                <p>13:30 <br> 17:00</p>
-                            </div>
-                        </div>
-                        <a class="btn-abonement" href="https://wa.me/79097588738?text=Здравствуйте%2C+я+хочу+приобрести+абонемент+WORKOUT">Купить карту</a>
-                    </div>
-                    <div class="abonement4">
-                        <img src="./static/images/icons/лого.png" alt="" class="logo-abonement">
-                        <h5 class="name-abonement">YOGA IYENGAR</h5>
-                        <div class="price-abonement4">
-                            <div class="term-abonement4">
-                                <p>12/МЕСЯЦ</p>
-                                <p>8/МЕСЯЦ</p>
-                                <p>4/МЕСЯЦ</p>
-                                <p>РАЗОВОЕ</p>
-                                <p>ПРОБНОЕ</p>
-                            </div>
-                            <div class="money-abonement4">
-                                <p>4000₽</p>
-                                <p>3200₽</p>
-                                <p>1800₽</p>
-                                <p>500₽</p>
-                                <p>250₽</p>
-                            </div>
-                        </div>
-                        <div class="graph-abonement4">
-                            <div class="day-abonement4">
-                                <p>Пн</p>
-                                <p>Вт</p>
-                                <p>Ср</p>
-                                <p>Чт</p>
-                                <p>Пт</p>
-                                <p>Сб</p>
-                            </div>
-                            <div class="time-abonement4">
-                                <p>8:30</p>
-                                <p class="hidden">8:30</p>
-                                <p>8:30</p>
-                                <p class="hidden">8:30</p>
-                                <p>8:30</p>
-                                <p>8:30</p>
-                            </div>
-                        </div>
-                       <a class="btn-abonement" href="https://wa.me/79097588738?text=Здравствуйте%2C+я+хочу+приобрести+абонемент+YOGA+IYENGAR">Купить карту</a>
-                    </div>
-                    <div class="abonement5">
-                        <img src="./static/images/icons/лого.png" alt="" class="logo-abonement">
-                        <h5 class="name-abonement">ARM WRESTLING</h5>
-                        <div class="price-abonement5">
-                            <p>Персональные тренировки проводятся по предварительной записи и обсуждаются индивидуально с тренером</p>
-                        </div>
-                        <a class="btn-abonement" href="https://wa.me/79097588738?text=Здравствуйте%2C+у+меня+есть+вопрос+по+тренировкам+ARM+WRESTLING">Узнать подробнее</a>
-                    </div>
-                    <div class="abonement6">
-                        <img src="./static/images/icons/лого.png" alt="" class="logo-abonement">
-                        <h5 class="name-abonement">FLY YOGA</h5>
-                        <div class="price-abonement6">
-                            <div class="term-abonement6">
-                                <p>12/МЕСЯЦ</p>
-                                <p>8/МЕСЯЦ</p>
-                                <p>4/МЕСЯЦ</p>
-                                <p>РАЗОВОЕ</p>
-                                <p>ПРОБНОЕ</p>
-                            </div>
-                            <div class="money-abonement6">
-                                <p>4000₽</p>
-                                <p>3200₽</p>
-                                <p>1800₽</p>
-                                <p>500₽</p>
-                                <p>250₽</p>
-                            </div>
-                        </div>
-                        <div class="graph-abonement6">
-                            <div class="day-abonement6">
-                                <p>Пн</p>
-                                <p>Вт</p>
-                                <p>Ср</p>
-                                <p>Чт</p>
-                                <p>Пт</p>
-                                <p>Сб</p>
-                            </div>
-                            <div class="time-abonement6">
-                                <p>19:00</p>
-                                <p class="hidden">19:00</p>
-                                <p>19:00</p>
-                                <p class="hidden">19:00</p>
-                                <p class="hidden">19:00</p>
-                                <p>10:30</p>
-                            </div>
-                        </div>
-                        <a class="btn-abonement" href="https://wa.me/79097588738?text=Здравствуйте%2C+я+хочу+приобрести+абонемент+FLY+YOGA">Купить карту</a>
-                    </div>
-                </div>
-                <div class="container container-abonemet">
-                    <div class="swiper">
-                      <div class="content2">
-                        <div class="cards-wrapper swiper-wrapper">
-                          <div class="card one swiper-slide">
-                            <div class="abonement1">
-                                <img src="./static/images/icons/лого.png" alt="" class="logo-abonement">
-                                <h5 class="name-abonement">TRX FISIO</h5>
-                                <div class="price-abonement1">
-                                    <div class="term-abonement1">
-                                        <p>12/МЕСЯЦ</p>
-                                        <p>8/МЕСЯЦ</p>
-                                        <p>4/МЕСЯЦ</p>
-                                        <p>РАЗОВОЕ</p>
-                                        <p>ПРОБНОЕ</p>
-                                    </div>
-                                    <div class="money-abonement1">
-                                        <p>4000₽</p>
-                                        <p>3200₽</p>
-                                        <p>1800₽</p>
-                                        <p>500₽</p>
-                                        <p>250₽</p>
-                                    </div>
-                                </div>
-                                <div class="graph-abonement1">
-                                    <div class="day-abonement1">
-                                        <p>Пн</p>
-                                        <p>Вт</p>
-                                        <p>Ср</p>
-                                        <p>Чт</p>
-                                        <p>Пт</p>
-                                        <p>Сб</p>
-                                    </div>
-                                    <div class="time-abonement1">
-                                        <p>7:00</p>
-                                        <p>7:00</p>
-                                        <p>7:00</p>
-                                        <p>7:00</p>
-                                        <p>7:00</p>
-                                        <p>7:00</p>
-                                    </div>
-                                </div>
-                                <a class="btn-abonement" href="https://wa.me/79097588738?text=Здравствуйте%2C+я+хочу+приобрести+абонемент+TRX+FISIO">Купить карту</a>
-                            </div>
-                          </div>
-                          <div class="card two swiper-slide">
-                            <div class="abonement2">
-                                <img src="./static/images/icons/лого.png" alt="" class="logo-abonement">
-                                <h5 class="name-abonement">PERSONAL TRAINING</h5>
-                                <div class="price-abonement2">
-                                   <p>Персональные тренировки проводятся по предварительной записи и обсуждаются индивидуально с тренером</p>
-                                </div>
-                                
-                                <a class="btn-abonement" href="https://wa.me/79097588738?text=Здравствуйте%2C+у+меня+есть+вопрос+по+персональным+тренировкам">Узнать подробнее</a>
-                            </div>
-                          </div>
-                          <div class="card three swiper-slide">
-                            <div class="abonement3">
-                                <img src="./static/images/icons/лого.png" alt="" class="logo-abonement">
-                                <h5 class="name-abonement">WORKOUT</h5>
-                                <div class="price-abonement3">
-                                    <div class="term-abonement3">
-                                        <p>12/МЕСЯЦ</p>
-                                        <p>8/МЕСЯЦ</p>
-                                        <p>4/МЕСЯЦ</p>
-                                        <p>РАЗОВОЕ</p>
-                                        <p>ПРОБНОЕ</p>
-                                    </div>
-                                    <div class="money-abonement3">
-                                        <p>4000₽</p>
-                                        <p>3200₽</p>
-                                        <p>1800₽</p>
-                                        <p>500₽</p>
-                                        <p>250₽</p>
-                                    </div>
-                                </div>
-                                <div class="graph-abonement3">
-                                    <div class="day-abonement3">
-                                        <p>Пн</p>
-                                        <p>Вт</p>
-                                        <p>Ср</p>
-                                        <p>Чт</p>
-                                        <p>Пт</p>
-                                        <p>Сб</p>
-                                    </div>
-                                    <div class="time-abonement3">
-                                        <p>16:00 <br> 17:30</p>
-                                        <p>17:00 <br> 18:30 <br> 20:00</p>
-                                        <p>16:00 <br> 17:30</p>
-                                        <p>17:00 <br> 18:30 <br> 20:00</p>
-                                        <p>16:00 <br> 17:30</p>
-                                        <p>13:30 <br> 17:00</p>
-                                    </div>
-                                </div>
-                                <a class="btn-abonement" href="https://wa.me/79097588738?text=Здравствуйте%2C+я+хочу+приобрести+абонемент+WORKOUT">Купить карту</a>
-                            </div>
-                          </div>
-                          <div class="card four swiper-slide">
-                            <div class="abonement4">
-                                <img src="./static/images/icons/лого.png" alt="" class="logo-abonement">
-                                <h5 class="name-abonement">YOGA IYENGAR</h5>
-                                <div class="price-abonement4">
-                                    <div class="term-abonement4">
-                                        <p>12/МЕСЯЦ</p>
-                                        <p>8/МЕСЯЦ</p>
-                                        <p>4/МЕСЯЦ</p>
-                                        <p>РАЗОВОЕ</p>
-                                        <p>ПРОБНОЕ</p>
-                                    </div>
-                                    <div class="money-abonement4">
-                                        <p>4000₽</p>
-                                        <p>3200₽</p>
-                                        <p>1800₽</p>
-                                        <p>500₽</p>
-                                        <p>250₽</p>
-                                    </div>
-                                </div>
-                                <div class="graph-abonement4">
-                                    <div class="day-abonement4">
-                                        <p>Пн</p>
-                                        <p>Вт</p>
-                                        <p>Ср</p>
-                                        <p>Чт</p>
-                                        <p>Пт</p>
-                                        <p>Сб</p>
-                                    </div>
-                                    <div class="time-abonement4">
-                                        <p>8:30</p>
-                                        <p class="hidden">8:30</p>
-                                        <p>8:30</p>
-                                        <p class="hidden">8:30</p>
-                                        <p>8:30</p>
-                                        <p>8:30</p>
-                                    </div>
-                                </div>
-                                <a class="btn-abonement" href="https://wa.me/79097588738?text=Здравствуйте%2C+я+хочу+приобрести+абонемент+YOGA+IYENGAR">Купить карту</a>
-                            </div>
-                          </div>
-                          <div class="card five swiper-slide">
-                            <div class="abonement5">
-                                <img src="./static/images/icons/лого.png" alt="" class="logo-abonement">
-                                <h5 class="name-abonement">ARM WRESTLING</h5>
-                                <div class="price-abonement5">
-                                    <p>Персональные тренировки проводятся по предварительной записи и обсуждаются индивидуально с тренером</p>
-                                </div>
-                                <a class="btn-abonement" href="https://wa.me/79097588738?text=Здравствуйте%2C+у+меня+есть+вопрос+по+ARM+WRESTLING">Узнать подробнее</a>
-                            </div>
-                          </div>
-                          <div class="card five swiper-slide">
-                            <div class="abonement6">
-                                <img src="./static/images/icons/лого.png" alt="" class="logo-abonement">
-                                <h5 class="name-abonement">FLY YOGA</h5>
-                                <div class="price-abonement6">
-                                    <div class="term-abonement6">
-                                        <p>12/МЕСЯЦ</p>
-                                        <p>8/МЕСЯЦ</p>
-                                        <p>4/МЕСЯЦ</p>
-                                        <p>РАЗОВОЕ</p>
-                                        <p>ПРОБНОЕ</p>
-                                    </div>
-                                    <div class="money-abonement6">
-                                        <p>4000₽</p>
-                                        <p>3200₽</p>
-                                        <p>1800₽</p>
-                                        <p>500₽</p>
-                                        <p>250₽</p>
-                                    </div>
-                                </div>
-                                <div class="graph-abonement6">
-                                    <div class="day-abonement6">
-                                        <p>Пн</p>
-                                        <p>Вт</p>
-                                        <p>Ср</p>
-                                        <p>Чт</p>
-                                        <p>Пт</p>
-                                        <p>Сб</p>
-                                    </div>
-                                    <div class="time-abonement6">
-                                        <p>19:00</p>
-                                        <p class="hidden">19:00</p>
-                                        <p>19:00</p>
-                                        <p class="hidden">19:00</p>
-                                        <p class="hidden">19:00</p>
-                                        <p>10:30</p>
-                                    </div>
-                                </div>
-                                <a class="btn-abonement" href="https://wa.me/79097588738?text=Здравствуйте%2C+я+хочу+приобрести+абонемент+FLY+YOGA">Купить карту</a>
-                            </div>
-                          </div>
-                        </div>
-                        <div class="swiper-pagination2"></div>
-                      </div>
-                </div>
-            </div>
-        </section>
-        <section class="map">
-            <div class="contacts">
-                <h3 class="title-contacts">КОНТАКТЫ</h3>
-                <h5 class="adres-contacts">г. Пятигорск, ул. Ермолова 14Г
-                    ‌<br> ТЦ "Парус"
-                    <br> 3 этаж
-                </h5>
-                <div class="phone-contacts">
-                    <a href="tel:+79097588738">+7 (909) 758-87-38</a>
-                    <a href="tel:+79933999909">+7 (993) 399-99-09</a>
-                </div>
-               
-                <a class="way-contacts" href="https://yandex.ru/maps/org/195577110849">ПРОЛОЖИТЬ МАРШРУТ</a>
-            </div>
-            
-            <div id="button" class="btn-map-lock"></div>
-            <div id="map-test1" class="map1"></div>
-                <script src="https://api-maps.yandex.ru/2.1/?apikey=ваш API-ключ&lang=ru_RU">
-                </script>
-        </section>
-    </main>
-    <footer>
-        <div class="container footer">
-            <div class="footer-link">
-                <h3>Наши соцсети</h3>
-                <a href="oferta.html" target="_self"><h4>Публичная оферта</h4></a>
-                <a href="https://wa.me/79097588738?text=Здравствуйте%2C+я+хочу+предложить+Вам+сотрудничество"><h4>Предложить сотрудничество</h4></a>
-            </div>
-            <div class="footer-graf">
-                <h3>График работы</h3>
-                <h4>Пн-Сб</h4>
-                <h4>08:30-21:30</h4>
-            </div>
-            <div class="footer-media">
-                <h3>Наши соцсети</h3>
-                <div class="icons-footer">
-                    <a href="https://vk.com/workout_gym_ptg?from=search"><img  src="static/images/icons/vk.png" alt=""></a>
-                    <a href="https://t.me/workout_ptg?from=search"><img  src="static/images/icons/telegram.png" alt=""></a>
                 </div>
             </div>
         </div>
-        <div class="copyright">© Все права защищены<pre><a href="https://www.rusprofile.ru/ip/321265100108572"> ИП Асташкин А. И. 2024</a></div>
+    </header>
+
+    <!-- Навигация -->
+    <nav class="navbar">
+        <div class="container">
+            <div class="nav-buttons">
+                <button class="nav-btn active" data-tab="home">
+                    📖 Главная
+                </button>
+                <button class="nav-btn" data-tab="locations">
+                    📍 Места
+                </button>
+                <button class="nav-btn" data-tab="guide">
+                    🔗 QR-Гид
+                </button>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Основной контент -->
+    <main class="main">
+        <div class="container">
+            <!-- Страница: Главная -->
+            <section id="home" class="tab-content active">
+                <!-- Герой секция -->
+                <section class="hero">
+                    <div class="hero-content">
+                        <div class="hero-text">
+                            <h2>Откройте историю Кавказа</h2>
+                            <p>Путешествуйте сквозь века, посещая легендарные крепости, древние храмы и священные места Кавказа. Просто наведите камеру на QR-код и погрузитесь в интерактивное путешествие по истории.</p>
+                            <button class="btn btn-primary">Начать путешествие →</button>
+                        </div>
+                        <div class="hero-eagle">
+                            <img  class="orel-photo" src="./pic/orel.webp" alt="orel" width="100%">
+                        </div>
+                    </div>
+                </section>
+
+                <!-- Преимущества -->
+                <section class="advantages">
+                    <h3>Почему Чичероне?</h3>
+                    <div class="advantages-grid">
+                        <div class="advantage-card">
+                            <div class="advantage-icon">📱</div>
+                            <h4>QR-Технология</h4>
+                            <p>Мгновенный доступ к информации</p>
+                        </div>
+                        <div class="advantage-card">
+                            <div class="advantage-icon">🗺️</div>
+                            <h4>Интерактивные карты</h4>
+                            <p>Навигация по историческим местам</p>
+                        </div>
+                        <div class="advantage-card">
+                            <div class="advantage-icon">📖</div>
+                            <h4>Богатая история</h4>
+                            <p>Подробные исторические материалы</p>
+                        </div>
+                    </div>
+                </section>
+
+                <!-- Статистика -->
+                <section class="statistics">
+                    <h3>Наш проект в цифрах</h3>
+                    <div class="stats-grid">
+                        <div class="stat-item">
+                            <div class="stat-number">50+</div>
+                            <p>Исторических мест</p>
+                        </div>
+                        <div class="stat-item">
+                            <div class="stat-number">1000+</div>
+                            <p>Лет истории</p>
+                        </div>
+                        <div class="stat-item">
+                            <div class="stat-number">6</div>
+                            <p>Регионов Кавказа</p>
+                        </div>
+                        <div class="stat-item">
+                            <div class="stat-number">∞</div>
+                            <p>Возможностей открытий</p>
+                        </div>
+                    </div>
+                </section>
+            </section>
+
+            <!-- Страница: Места -->
+            <section id="locations" class="tab-content">
+                <h2>Культурно-исторические места Кавказа</h2>
+                <div class="locations-grid" id="locationsGrid">
+                    <!-- Карточки генерируются JS -->
+                </div>
+            </section>
+
+            <!-- Страница: QR-Гид -->
+            <section id="guide" class="tab-content">
+                <h2>Как использовать QR-гид</h2>
+                <div class="guide-grid" id="guideGrid">
+                    <!-- Шаги генерируются JS -->
+                </div>
+
+                <!-- CTA -->
+                <section class="cta">
+                    <h3>Готовы к путешествию?</h3>
+                    <p>Загрузите приложение и начните исследовать Кавказ прямо сейчас</p>
+                    <button class="btn btn-primary">Скачать приложение</button>
+                </section>
+            </section>
+        </div>
+    </main>
+
+    <!-- Подвал -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h4>О проекте</h4>
+                    <p>Чичероне — цифровой гид по культурно-историческим местам Кавказа</p>
+                </div>
+                <div class="footer-section">
+                    <h4>Контакты</h4>
+                    <p>📧 info@cicerone.ru</p>
+                    <p>📱 +7 (XXX) XXX-XX-XX</p>
+                </div>
+                <div class="footer-section">
+                    <h4>Следите за нами</h4>
+                    <p>🌐 Социальные сети и платформы</p>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>© 2025 Проект "Чичероне" | Все права защищены | 🦅</p>
+            </div>
+        </div>
     </footer>
-<script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
-<script src="./app.js"></script>
+
+    <!-- Модальное окно -->
+    <div id="modal" class="modal">
+        <div class="modal-content">
+            <div class="modal-header">
+                <div id="modalImage" class="modal-image"></div>
+                <h2 id="modalTitle"></h2>
+            </div>
+            <div class="modal-body">
+                <p id="modalRegion"></p>
+                <p id="modalDescription"></p>
+                <div class="modal-qr">
+                    <p>Наведите камеру на QR-код:</p>
+                    <div class="qr-placeholder">📱</div>
+                </div>
+            </div>
+            <button class="btn btn-primary" onclick="closeModal()">Закрыть</button>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
 </body>
 </html>
