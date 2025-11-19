@@ -613,9 +613,12 @@ body {
     .advantages-grid {
         grid-template-columns: 1fr;
     }
-
+    .statistics{
+        padding: 15px;
+    }
     .stats-grid {
-        grid-template-columns: repeat(2, 1fr);
+        align-items: center;
+        grid-template-columns: repeat(2, 100px);
     }
 
     .locations-grid {
