@@ -555,6 +555,131 @@ body {
 }
 
 /* ============================================
+   РАЗДЕЛ: ЗДОРОВЬЕ
+   ============================================ */
+
+.health-intro {
+    background: linear-gradient(to right, #fef3c7, #fed7aa);
+    border: 3px solid var(--border-color);
+    border-radius: 12px;
+    padding: 24px;
+    margin-bottom: 32px;
+    text-align: center;
+}
+
+.health-intro p {
+    font-size: 18px;
+    color: var(--primary-dark);
+    font-weight: 500;
+    line-height: 1.6;
+}
+
+.health-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 24px;
+    margin-bottom: 48px;
+}
+
+.health-card {
+    background: white;
+    border: 3px solid var(--border-color);
+    border-radius: 12px;
+    padding: 24px;
+    transition: all 0.3s ease;
+}
+
+.health-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+}
+
+.health-icon {
+    font-size: 48px;
+    text-align: center;
+    margin-bottom: 16px;
+}
+
+.health-card h3 {
+    font-size: 20px;
+    color: var(--primary-dark);
+    margin-bottom: 16px;
+    text-align: center;
+    border-bottom: 2px solid var(--border-color);
+    padding-bottom: 8px;
+}
+
+.health-card ul {
+    list-style-type: none;
+    padding-left: 0;
+}
+
+.health-card li {
+    color: var(--text-dark);
+    margin-bottom: 8px;
+    font-size: 14px;
+    padding-left: 24px;
+    position: relative;
+}
+
+.health-card li:before {
+    content: "✓";
+    color: var(--primary-medium);
+    font-weight: bold;
+    position: absolute;
+    left: 0;
+}
+
+.health-tips {
+    background: linear-gradient(to right, var(--primary-medium), var(--secondary-dark));
+    border-radius: 12px;
+    padding: 32px;
+    color: var(--text-light);
+}
+
+.health-tips h3 {
+    font-size: 24px;
+    color: var(--text-light);
+    margin-bottom: 24px;
+    text-align: center;
+    border: none;
+}
+
+.contacts-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+    text-align: center;
+}
+
+.contact-item {
+    padding: 16px;
+    background: rgba(255, 255, 255, 0.1);
+    border-radius: 8px;
+    transition: all 0.3s ease;
+}
+
+.contact-item:hover {
+    background: rgba(255, 255, 255, 0.2);
+    transform: scale(1.05);
+}
+
+.contact-icon {
+    font-size: 32px;
+    margin-bottom: 12px;
+}
+
+.contact-item p {
+    color: #fed7aa;
+    font-size: 14px;
+}
+
+.contact-item strong {
+    color: var(--text-light);
+    display: block;
+    margin-bottom: 4px;
+}
+/* ============================================
    ПОДВАЛ
    ============================================ */
 
@@ -641,5 +766,22 @@ body {
     .nav-btn {
         padding: 12px 16px;
         font-size: 14px;
+    }
+
+        .health-grid {
+        grid-template-columns: 1fr;
+    }
+    
+    .contacts-grid {
+        grid-template-columns: 1fr;
+        gap: 12px;
+    }
+    
+    .health-intro {
+        padding: 16px;
+    }
+    
+    .health-intro p {
+        font-size: 16px;
     }
 }
